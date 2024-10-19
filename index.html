@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>農用曳引機安全駕訓鑑測</title>
+    <title>國立屏東科技大學 農用曳引機安全駕訓鑑測</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,28 +20,6 @@
             text-align: center;
             font-size: 2em;
             font-weight: bold;
-            position: relative;
-        }
-
-        .contact-button {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #f4a261;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 10px 20px;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background-color: #ff7f50;
         }
 
         .container {
@@ -103,14 +81,41 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        .cta-button {
+            background-color: #f4a261;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e08d52;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    農用曳引機安全駕訓鑑測
-    <a href="https://forms.gle/9jUVBGHbgzXRYWQU7" class="contact-button">諮詢請點這</a>
+    國立屏東科技大學 農用曳引機安全駕訓鑑測
 </header>
+
+<div class="cta-container">
+    <a href="https://forms.gle/9jUVBGHbgzXRYWQU7" class="cta-button">諮詢請點這</a>
+</div>
 
 <div class="container">
     <div class="poster">
@@ -124,7 +129,7 @@
 
     <h2>常見問題</h2>
     <p class="slide-in"><span class="question">Q：</span>鑑測通過之後對有何益處？</p>
-    <p>A：通過鑑測後，會頒發合格證明，做為未來相關相關配套措施之憑證。</p>
+    <p>A：通過鑑測後，會頒發合格證明，做為未來相關配套措施之憑證。</p>
 
     <p class="slide-in"><span class="question">Q：</span>鑑測需自備曳引機嗎?收取費用？</p>
     <p>A：不用自備曳引機，由本校提供鑑測農用曳引機，並得酌收場地設備等使用維護費。不論鑑測通過與否，本項費用一律不予退回。
@@ -145,7 +150,11 @@
     <p class="slide-in"><span class="question">Q：</span>術科鑑測項目有哪些？</p>
     <p>A. 路邊停車、上下坡道、倒車入庫、曲巷調頭、曲線前進、鐵路平交道、斑馬紋行人穿越道、路面障礙等。</p>
 
-    <p class="slide-in">若仍有相關疑問或建議事項，再請點選<a href="https://forms.gle/9jUVBGHbgzXRYWQU7" style="color: #f4a261; text-decoration: underline;">這裡</a>，將會有專人為您解答或諮詢，謝謝您!!</p>
+    <p class="slide-in">若仍有相關疑問或建議事項，再請點選以下連接或網址 <a href="https://forms.gle/9jUVBGHbgzXRYWQU7" target="_blank">https://forms.gle/9jUVBGHbgzXRYWQU7</a>，將會有專人為您解答或諮詢，謝謝您!!</p>
+</div>
+
+<div class="cta-container">
+    <a href="https://forms.gle/9jUVBGHbgzXRYWQU7" class="cta-button">諮詢請點這</a>
 </div>
 
 <footer>
@@ -164,11 +173,13 @@
             });
         });
 
-        elements.forEach(el => {
-            observer.observe(el);
+        elements.forEach(element => {
+            observer.observe(element);
         });
     });
 </script>
 
 </body>
 </html>
+
+
